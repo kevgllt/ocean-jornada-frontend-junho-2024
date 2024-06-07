@@ -1,3 +1,10 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* espaço entre os elementos*/
+  justify-content: center;
+}
+
 .card {
   border: 1px solid black;
   padding: 16px;
