@@ -1,5 +1,6 @@
 import './App.css'
-import Card from './componets/Card/Card'
+import Card from './components/Card/Card'
+import Tag from './components/Tag/Tag'
 
 function App() {
   const item1 = {
@@ -11,8 +12,14 @@ function App() {
     image: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg'
   }
   const item3 = {
-    name: 'Summer Smith',
+    name: 'test',
     image: 'https://rickandmortyapi.com/api/character/avatar/3.jpeg'
+  }
+
+  const text1 = {
+    status: 'test',
+    especies: 'tester',
+    origin: 'testing'
   }
 
   // Listas (Arrays)
@@ -26,6 +33,7 @@ function App() {
         
         {/*{itens.map(function (elemento) {
           return <Card item={elemento} /> })}*/}
+        <Tag text={text1}/>
       </div>
     </>
   )
